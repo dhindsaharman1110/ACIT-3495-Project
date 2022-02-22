@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/styles.css') }}">
+    <title>BMR</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="{{ url_for('index')}}">BMR</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1> Basal Metabolic Rate </h1>
+    <div class="description">
+        <h5>
+            The acronym BMR stands for Basal Metabolic Rate.
+            It is the number of calories your body burns during complete rest.
+            Your body needs some energy even during siesta for performing some
+            basic functions like breathing, circulating blood, and repairing cells.
+            You can get an insight into your energy level if you know the BMR levels.
+            <br>
+            Your body burns more calories by movement and exercise.
+            So, by monitoring your consumption, it will be better to prevent unwanted
+            weight gains or severe weight loss.
+        </h5>
+    </div>
+
+    <br>
+    <br>
+    <div>
+        <h2>How it calculate Your BMR?</h2>
+
+        BMR was introduced to the world by James Arthur Harris and Francis Gano Benedict. So, the equation is popularly
+        known as the Harris-Benedict formula. A new equation was formulated in 1990, which is known as the Mifflin-St.
+        George equation.
+
+        <br>
+
+        P= (10.0 x m/1 kg) + (6.25 x h/1cm) - (5.00 x a/1 year) + s
+
+        <br>
+        Here:
+        <br>
+        P= total energy output during rest(BMR)
+        <br>
+        M= weight of the person in kgs
+        <br>
+        H= height of the concerned person
+        <br>
+        A= age of the incumbent
+        <br>
+        S= constant which is +5 for males and -161 for females
+    </div>
+
+</body>
+
+</html>

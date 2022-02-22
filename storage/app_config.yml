@@ -1,0 +1,8 @@
+version: 1
+datastore:
+  user: backend_user
+  password: Password
+  hostname: 54.190.110.228
+  port: 3306
+  db: events
+  table: readings

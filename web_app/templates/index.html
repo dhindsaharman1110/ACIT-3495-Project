@@ -1,0 +1,20 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename= 'css/styles.css') }}">
+        <title>BMR</title>
+    </head>
+    <body>
+        <h1> Welcome to Basal Metabolic Rate Application </h1>
+    </body>
+</html> -->
+
+
+
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Welcome to Basal Metabolic Rate{% endblock %}</h1>
+{% endblock %}
