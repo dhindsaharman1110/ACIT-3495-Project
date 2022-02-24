@@ -8,10 +8,13 @@ db_cursor.execute('''
           (id INT NOT NULL AUTO_INCREMENT, 
            user_fname VARCHAR(250) NOT NULL,
            user_lname VARCHAR(250) NOT NULL,
+           user_email VARCHAR(250) NOT NULL,
+           user_phone VARCHAR(10) NOT NULL,
            user_age VARCHAR (3) NOT NULL,
            user_gender VARCHAR(250) NOT NULL, 
            user_height VARCHAR(3) NOT NULL,
            user_weight VARCHAR(3) NOT NULL,
+           user_BMR DECIMAL(19, 4) NOT NULL,
            CONSTRAINT reading_pk PRIMARY KEY (id)) 
           ''')
 

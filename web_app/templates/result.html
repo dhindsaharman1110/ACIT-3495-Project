@@ -14,7 +14,6 @@
 
   </head>
   <body>
-    <h1> Show results gere Mathhew! </h1>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
         <a class="navbar-brand" href="{{ url_for('index')}}">BMR</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +30,40 @@
     <!-- <div>
         <h1>{% block content %} {% endblock %} </h1>
     </div> -->
+          <div>
+		  <h3>
+	      		Your BMR value is {{  user_BMR  }}
+		</h3>
 
+                <h3> BMR rate for a gender with max Height, Weight and Age </h3>
+                  <ul>
+                        <li>
+                              For male:  {{ max_bmr_male }}
+                        </li>
+                        <li>
+                              For female:  {{ max_bmr_female }}
+                        </li>
+                  </ul>
+
+                 <h3> BMR rate for a gender with minimum Height, Weight and Age </h3>
+                  <ul>
+                        <li>
+                              For male:   {{ min_bmr_male }}
+                        </li>
+                        <li>
+                              For female:    {{ min_bmr_female }}
+                        </li>
+                  </ul>
+                 <h3> BMR rate for a gender with avg Height, Weight and Age </h3>
+                  <ul>
+                        <li>
+                              For male:  {{ avg_bmr_male }}
+                        </li>
+                        <li>
+                              For female:  {{ avg_bmr_female }}
+                        </li>
+                  </ul>
+          </div>
     <div class="testbox">
       <form action="/readings", method="post">
         <div class="banner">
